@@ -7,10 +7,6 @@ const cartController = require('../controllers/cartController')
 
 const routes = Router()
 
-routes.get('/', (req, res) => {
-    res.send('Olá Mundo')
-})
-
 routes.post('/users', userController.createUser) //comando post cria usuário
 routes.get('/users', userController.getUsers) //comando para listar todos os usuários
 routes.get('/users/:user_id', userController.getUserById) //comando para listar um usuário específico
